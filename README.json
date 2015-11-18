@@ -1,0 +1,12 @@
+{
+  "justNow": {
+    "onInitialRender": [
+      "header with title",
+      "button to click to display the time just now"
+    ],
+    "onButtonClick": [
+      "display [unix_time,12hr-time,24hr-time] just now",
+      "display button to clear and get new time"
+    ]
+  }
+}

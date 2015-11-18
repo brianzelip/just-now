@@ -1,0 +1,24 @@
+{
+  "name": "just-now",
+  "version": "0.0.1",
+  "description": "React app to get the timestamp just now",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/brianzelip/just-now.git"
+  },
+  "keywords": [
+    "react",
+    "practice",
+    "unix time"
+  ],
+  "author": "Brian Zelip",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/brianzelip/just-now/issues"
+  },
+  "homepage": "https://github.com/brianzelip/just-now"
+}
