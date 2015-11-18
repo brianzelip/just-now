@@ -32,10 +32,7 @@
 @import 'basscss-borders';
 @import 'basscss-colors';
 @import 'basscss-background-colors';
-
-
 /* Optional Modules (not included in Basscss by default) */
-/*
 @import 'basscss-btn-sizes';
 @import 'basscss-color-forms-dark';
 @import 'basscss-input-range';
@@ -48,17 +45,12 @@
 @import 'basscss-table-object';
 @import 'basscss-highlight-dark';
 @import 'basscss-highlight';
-*/
 
 
 /* Example custom file import */
 /*
 @import './color/borders';
 */
-
-
-/* Default custom properties */
-@import 'basscss-defaults';
 
 
 /* Custom media queries */
