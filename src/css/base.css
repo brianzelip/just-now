@@ -47,22 +47,13 @@
 @import 'basscss-highlight';
 
 
-/* Example custom file import */
-/*
-@import './color/borders';
-*/
-
-
-/* Custom media queries */
-/*
+/* Basscss media queries */
 @custom-media --breakpoint-sm (min-width: 40em);
 @custom-media --breakpoint-md (min-width: 52em);
 @custom-media --breakpoint-lg (min-width: 64em);
-*/
 
 
-/* Custom properties */
-/*
+/* Basscss properties */
 :root {
 
   --font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -134,7 +125,8 @@
   --button-background-color: var(--blue);
   --pre-background-color: var(--silver);
 
-
 }
-*/
 
+
+/* Just-Now styles */
+@import './just-now';
