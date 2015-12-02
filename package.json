@@ -4,7 +4,11 @@
   "description": "React app to get the timestamp just now",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css": "cssnext src/css/base.css build/built.css",
+    "minify:css": "cssnext -c src/css/base.css build/built.min.css",
+    "serve": "http-server",
+    "start": "npm run watch:css & npm run serve",
+    "watch:css": "watch 'npm run css && npm run minify:css' ./src/css"
   },
   "repository": {
     "type": "git",
@@ -28,6 +32,7 @@
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "react-router": "^1.0.0",
+    "vue": "^1.0.10",
     "watch": "^0.16.0"
   },
   "dependencies": {
@@ -67,12 +72,5 @@
     "basscss-utility-typography": "^2.0.0",
     "basscss-white-space": "^1.1.2",
     "flex-object": "^2.0.2"
-  },
-  "scripts": {
-    "css": "cssnext src/css/base.css build/built.css",
-    "minify:css": "cssnext -c src/css/base.css build/built.min.css",
-    "serve": "http-server",
-    "start": "npm run watch:css & npm run serve",
-    "watch:css": "watch 'npm run css && npm run minify:css' ./src/css"
   }
 }

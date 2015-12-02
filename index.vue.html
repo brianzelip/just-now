@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="build/built.min.css">
+    <title>just now in Vue.js</title>
+    <meta name="description" content="">
+    <meta name="author" content="Brian Zelip">
+    <meta name="keywords" content="">
+  </head>
+
+  <body>
+
+    <div id="app" class="col-7 mx-auto pt10 center">
+      <button v-on:click="showJustNow" class="btn btn-primary btn-big">Get the time now</button>
+      <p class="h1 aqua">{{ justNow }}</p>
+    </div>
+
+    <script src="js/vue.min.js"></script>
+    <script>
+      new Vue ({
+        el: "#app",
+        data: {
+          justNow: ''
+        },
+      methods: {
+          showJustNow: function () {
+            var jn = new Date();
+            this.justNow = jn.toLocaleTimeString();
+          }
+        }
+      });
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="">
+    <title>js basics</title>
+    <meta name="description" content="learning some js basics via !MDN's js docs">
+    <meta name="author" content="Brian Zelip">
+    <meta name="keywords" content="js, sandbox, Mozilla Developer Network">
+  </head>
+
+  <body>
+
+    <div id="1">Hello <span class="red">there</span> how do you do?</div>
+    <h1>hello</h1> <h1>world</h1>
+
+    <script>
+      var textContent = document.getElementById("1").textContent;
+      var innerHTML = document.getElementById("1").innerHTML;
+      var h1Selector = document.querySelector("h1");
+      var h1SelectorAll = document.querySelectorAll("h1");
+      console.log("The textContent of the text variable is " + textContent);
+      console.log("The innerHTML of the text variable is " + innerHTML);
+      console.log(h1Selector);
+      console.log(h1SelectorAll);
+      function multiplyTwoInputs(num1,num2) {
+        var answer = num1 * num2;
+        return answer;
+      };
+      var noArgsAnswer = function noArgs() {
+        return 2+2;
+      };
+      console.log(noArgsAnswer());
+    </script>
+  </body>
+
+</html>
