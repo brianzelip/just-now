@@ -15,8 +15,9 @@
   <body>
 
     <div id="app" class="col-7 mx-auto pt10 center">
-      <button v-on:click="showJustNow" class="btn btn-primary btn-big">Get the time now</button>
-      <p class="h1 aqua">{{ justNow }}</p>
+      <button v-on:click="showJustNow" onclick="removeTestSlowly();" class="btn btn-primary btn-big">Get the time now</button>
+      <p id="JustNow" class="h1 aqua">{{ justNow }}</p>
+      {{$data|json}}
     </div>
 
     <script src="js/vue.min.js"></script>
@@ -24,15 +25,35 @@
       new Vue ({
         el: "#app",
         data: {
-          justNow: ''
+          justNow: '',
+          test: 'hello there!'
         },
       methods: {
           showJustNow: function () {
             var jn = new Date();
             this.justNow = jn.toLocaleTimeString();
-          }
+            //this.alertTheHomie();
+            this.clearDisplay();
+            //this.removeTest();
+          },
+          clearDisplay: function () {
+
+          },
+          removeTest: function () {
+            this.test = ""
+          },
+          removeTestSlowly: function () {
+            slow = window.setTimeout(removeTest, 5000);
+          },
+          alertTheHomie: function () {
+            alert('YOLO HOMIE!!');
+          },
         }
       });
+
+      /*window.setTimeout(function() {
+          alert("Hello World!");
+      }, 500);*/
     </script>
 
   </body>
